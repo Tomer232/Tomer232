@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="5">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+        <link rel="stylesheet" href="PortfolioV1.css">
+        <title>Pesonal Portfolio</title>
+    </head>
+    <body>
+
+        <nav>
+            <div class="nav-logo">
+                <a href="#">
+                    <img src="Documents\icon.svg">
+                </a>
+            </div>
+
+            <ul class="nav-links">
+                <li class="link"><a href="#">Home</a></li>
+                <li id="link1" class="link"><a href="#">Projects</a></li>
+                <li id="link2" class="link"><a href="#">Achievement</a></li>
+                <li id="link3" class="link"><a href="#">About</a></li>
+            </ul>
+            <button class="btn">About Me</button>
+        </nav>
+
+        <header class="container">
+            <div class="content">
+                <span class="blur"></span>
+                <span class="blur"></span>
+                <!--<h4>CREATE YOUR SITE LIKE A PRO</h4>-->
+                <H1>Hi, I'm <span>Tomer</span>, Computer Science Student</H1>
+                <p>
+                    JAVA • PYTHON • C/C++ • HTML • CSS • JS • SQL
+                </p>
+                <button onclick="window.open('Documents/Tomer Karmazin CV.pdf', '_blank');" class="btn">CHECK OUT MY CV!</button>
+            </div>
+            <div class="Programming-photo">
+                <img src="Documents/Programming-photo.png">
+            </div>
+        </header>
+
+        <section class="container">
+            <button onclick="openLinkedInProfile()" class="btn"><a href="#"><i class="ri-linkedin-box-line"></i></a> Linkedin</button>
+            <button onclick="openGithubProfile()" class="btn"> <a href="#"><i class="ri-github-fill"></i></a>Github</button>
+            <h2 class="header">MY PROJECTS</h2>
+            <div class="projects">
+                <div class="card">
+                    <span><i class="ri-folder-line"></i></span>
+                    <h4>python game 1</h4>
+                    <p>
+                        bla bla bla bla bla not relly anything change later
+                    </p>
+                    <a href="#">join now</a>
+                </div>
+                <div class="card">
+                    <span><i class="ri-folder-line"></i></span>
+                    <h4>python game 2</h4>
+                    <p>
+                        bla bla bla bla bla not relly anything change later
+                    </p>
+                    <a href="#">join now</a>
+                </div>
+                <div class="card">
+                    <span><i class="ri-folder-line"></i></span>
+                    <h4>java script game 1</h4>
+                    <p>
+                        bla bla bla bla bla not relly anything change later
+                    </p>
+                    <a href="#">join now</a>
+                </div>
+                <div class="card">
+                    <span><i class="ri-folder-line"></i></span>
+                    <h4>javascript game 2</h4>
+                    <p>
+                        bla bla bla bla bla not relly anything change later
+                    </p>
+                    <a href="#">join now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 class="header">WIDGETS</h2>
+            <p class="sub-header">
+                In this section you can see some of my JS widgets that i made
+            </p>
+            <div class="widgets">
+                <div class="card">
+                    <div class="content">
+                        <h4>wheater app</h4>
+                        <h3>0$</h3>
+                        <p>
+                            maybe an icon and some words..
+                        </p>
+                    </div>
+                    <button class="btn">join now</button>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h4>crypto price</h4>
+                        <h3>0$</h3>
+                        <p>
+                            maybe an icon and some words..
+                        </p>
+                    </div>
+                    <button class="btn">join now</button>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h4>internet speed test</h4>
+                        <h3>0$</h3>
+                        <p>
+                            maybe an icon and some words..
+                        </p>
+                    </div>
+                    <button class="btn">join now</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="container">
+            <span class="blur"></span>
+            <span class="blur"></span>
+            <div class="column">
+                <div class="logo">
+                    <img src="Documents\icon.svg">
+                </div>
+                <p>
+                    some closing words beacuse why not lol 
+                </p>
+                <div class="socials">
+                    <a href="#"><i class="ri-linkedin-box-line"></i></a>
+                    <a href="#"><i class="ri-github-fill"></i></a>
+                </div>
+            </div>
+            <div class="column">
+                <h4>Contact</h4>
+                <a href="#">Tomer Karmazin</a>
+                <a href="#">tomer@jeepsea.co.il</a>
+            </div>
+            <div class="column">
+                <h4>nice quote</h4>
+                <a href="#">the qoute itself</a>
+            </div>
+        </footer>
+
+        <div class="scroll-top" onclick="scrollToTop()">
+            <img src="Documents/up-arrow.png" alt="Scroll to Top">
+        </div>    
+        
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn" onclick="closePopup()">&times;</span>
+                <h2>About Me</h2>
+                <p class="text">Passionate software development student pursuing expertise in cutting-edge technologies.
+                     Committed to making a positive impact by creating innovative solutions in finance, AI, cyber security, and blockchain.
+                     Eager to contribute skills and knowledge to excel in the dynamic field of technology, with a goal to become a reliable and efficient professional.
+                     Currently dedicated to earning a degree in Computer Science.</p>
+                <br>
+                <p class="text">My skills are: Attention to details & precision.
+                    Problem solving & analytical thinking.
+                    Understanding complex perspectives. Logical reasoning & critical thinking.
+                    Excellent communication & collaboration.</p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            Copyright © 2023 Tomer Karmazin.
+        </div>
+
+        <script src="PortfolioV1.js"></script>
+    </body>
+</html>
+
